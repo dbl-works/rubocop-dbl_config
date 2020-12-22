@@ -1,7 +1,15 @@
 require:
   - rubocop-packaging
   - rubocop-performance
-  - rubocop-rails
+  - rubocop-rspec
+
+#############
+#############
+#############
+# @TODO: we will have to agree on some rules here and update this file
+#############
+#############
+#############
 
 AllCops:
   # rubocop-rails_config still supports Ruby 2.4
