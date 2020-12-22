@@ -2,6 +2,7 @@ require:
   - rubocop-packaging
   - rubocop-performance
   - rubocop-rspec
+  - rubocop-rails
 
 #############
 #############
@@ -13,7 +14,7 @@ require:
 
 AllCops:
   # rubocop-rails_config still supports Ruby 2.4
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.7.2
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
   # to ignore them, so only the ones explicitly set in this file are enabled.
   DisabledByDefault: true

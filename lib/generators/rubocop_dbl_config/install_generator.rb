@@ -3,7 +3,7 @@
 require "rails/generators/base"
 require "active_support/core_ext/string"
 
-module RubocopRailsConfig
+module RubocopDblConfig
   module Generators
     class InstallGenerator < Rails::Generators::Base
       desc "Creates a .rubocop.yml config file that inherits from the official Ruby on Rails .rubocop.yml."

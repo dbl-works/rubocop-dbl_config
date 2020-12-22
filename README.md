@@ -11,7 +11,9 @@ RuboCop configuration for our Ruby on Rails projects.
 Add this line to your application's `Gemfile`:
 
 ```ruby
-gem "rubocop-dbl_config", github: 'dbl-works/rubocop-dbl_config'
+group :development, :test do
+  gem "rubocop-dbl_config", github: 'dbl-works/rubocop-dbl_config'
+end
 ```
 
 ## Usage
