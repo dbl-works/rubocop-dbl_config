@@ -1,9 +1,9 @@
-# rubocop-rails_config
+# rubocop-dbl_config
+* add a gem version here (private package!)
+* add a CI badge
 
-[![Gem Version](https://badge.fury.io/rb/rubocop-rails_config.svg)](https://badge.fury.io/rb/rubocop-rails_config)
-![Test](https://github.com/toshimaru/rubocop-rails_config/workflows/Test/badge.svg)
 
-RuboCop configuration which has the same code style checking as official Ruby on Rails.
+RuboCop configuration for our Ruby on Rails projects.
 
 [Official RoR RuboCop Configuration](https://github.com/rails/rails/blob/master/.rubocop.yml)
 
@@ -12,7 +12,7 @@ RuboCop configuration which has the same code style checking as official Ruby on
 Add this line to your application's `Gemfile`:
 
 ```ruby
-gem "rubocop-rails_config"
+gem "rubocop-dbl_config"
 ```
 
 ## Usage
@@ -21,21 +21,22 @@ Add this line to your application's `.rubocop.yml`:
 
 ```yml
 inherit_gem:
-  rubocop-rails_config:
-    - config/rails.yml
+  rubocop-dbl_config:
+    - config/dbl.yml
 ```
 
 Or just run:
 
 ```console
-$ rails generate rubocop_rails_config:install
+$ rails generate rubocop_dbl_config:install
 ```
+==> TODO: adjust this script!
 
 ## Configuration
 
 ### TargetRubyVersion
 
-Although Rails 6 only supports Ruby 2.5 or more, rubocop-rails_config still supports Ruby 2.4 or more to support as many Ruby versions as possible.
+Although Rails 6 only supports Ruby 2.5 or more, rubocop-dbl_config still supports Ruby 2.4 or more to support as many Ruby versions as possible.
 
 If you'd like to change `TargetRubyVersion`, see [Customization](#customization).
 
@@ -71,15 +72,15 @@ For example, if you want to change `TargetRubyVersion`, you can do it like:
 ```yml
 # .rubocop.yml
 inherit_gem:
-  rubocop-rails_config:
-    - config/rails.yml
+  rubocop-dbl_config:
+    - config/dbl.yml
 
 # Override Setting
 AllCops:
   TargetRubyVersion: 2.6
 ```
 
-This overrides `config/rails.yml` setting with `TargetRubyVersion: 2.6`.
+This overrides `config/dbl.yml` setting with `TargetRubyVersion: 2.6`.
 
 ## License
 
