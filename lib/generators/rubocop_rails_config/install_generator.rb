@@ -25,8 +25,8 @@ module RubocopRailsConfig
       def config_file_content
         <<-EOS.strip_heredoc
           inherit_gem:
-            rubocop-rails_config:
-              - config/rails.yml
+            rubocop-dbl_config:
+              - config/dbl.yml
         EOS
       end
     end

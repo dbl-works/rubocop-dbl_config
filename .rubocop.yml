@@ -1,1 +1,1 @@
-inherit_from: ./config/rails.yml
+inherit_from: ./config/dbl.yml
