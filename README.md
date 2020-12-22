@@ -36,7 +36,7 @@ $ rails generate rubocop_dbl_config:install
 
 ### TargetRubyVersion
 
-Although Rails 6 only supports Ruby 2.5 or more, rubocop-dbl_config still supports Ruby 2.4 or more to support as many Ruby versions as possible.
+Rails 6 only supports Ruby 2.5 or more, hence rubocop-dbl_config supports Ruby >= 2.5. See [test.yml](.github/workflows/test.yml) for details
 
 If you'd like to change `TargetRubyVersion`, see [Customization](#customization).
 
