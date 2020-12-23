@@ -20,7 +20,8 @@ task :rails_test do
     Style/FrozenStringLiteralComment
     Style/SymbolArray
     Bundler/OrderedGems
-    Style/ClassAndModuleChildren].freeze
+    Style/ClassAndModuleChildren
+  ].freeze
 
   sh "rails new #{rails_test_dir} --skip-webpack-install"
   cp "./test/fixture/.rubocop.yml", "#{rails_test_dir}/.rubocop.yml"
