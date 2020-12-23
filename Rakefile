@@ -12,7 +12,8 @@ end
 
 RuboCop::RakeTask.new
 
-task rails_test: :environment do
+# rubocop:disable Rails/RakeEnvironment
+task :rails_test do
   rails_test_dir = "rails_test"
   except_cops = %w[Style/StringLiterals Style/FrozenStringLiteralComment Style/SymbolArray].freeze
 
@@ -20,12 +21,13 @@ task rails_test: :environment do
   cp "./test/fixture/.rubocop.yml", "#{rails_test_dir}/.rubocop.yml"
   cd rails_test_dir do
     # Rails generates files which have some rubocop
-    # offenses(StringLiterals, FrozenStringLiteralComment).
+    # offenses(StringLiterals, FrozenStringLiteralComment SymbolArray).
     #
     # Run rubocop and check there are no offenses except those rules.
     sh "rubocop --format tap --except=#{except_cops.join(',')} ."
   end
   rm_rf rails_test_dir
 end
+# rubocop:enable Rails/RakeEnvironment
 
 task default: %i[test rubocop rails_test]
