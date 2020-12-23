@@ -14,6 +14,7 @@ module RubocopDblConfig
       end
 
     private
+
       def config_file_exists?
         File.exist?(config_file_path)
       end
