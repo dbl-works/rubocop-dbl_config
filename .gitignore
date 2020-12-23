@@ -13,3 +13,6 @@
 /rails_test
 
 TAGS
+
+# ignore local builds of the gem
+rubocop-dbl*.gem
