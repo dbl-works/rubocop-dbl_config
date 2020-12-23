@@ -2,7 +2,6 @@
 
 require "bundler/gem_tasks"
 require "rake/testtask"
-require "rubocop/rake_task"
 
 Rake::TestTask.new(:test) do |t|
   t.libs << "test"
@@ -10,13 +9,12 @@ Rake::TestTask.new(:test) do |t|
   t.test_files = FileList["test/**/*_test.rb"]
 end
 
-RuboCop::RakeTask.new
-
-task :rails_test do
-  RAILS_TEST_DIR = "rails_test"
+task :rubocop_rails do
+  RAILS_TEST_DIR = "tmp/rails_test"
   EXCEPT_COPS = %w(Style/StringLiterals Style/FrozenStringLiteralComment Style/SymbolArray).freeze
 
-  sh "rails new #{RAILS_TEST_DIR} --skip-webpack-install"
+  rm_rf RAILS_TEST_DIR
+  sh "rails new #{RAILS_TEST_DIR} --skip-webpack-install > /dev/null 2>&1"
   cp "./test/fixture/.rubocop.yml", "#{RAILS_TEST_DIR}/.rubocop.yml"
   cd RAILS_TEST_DIR do
     # Rails generates files which have some rubocop
@@ -25,7 +23,13 @@ task :rails_test do
     # Run rubocop and check there are no offenses except those rules.
     sh "rubocop --format tap --except=#{EXCEPT_COPS.join(",")} ."
   end
-  rm_rf RAILS_TEST_DIR
 end
 
-task default: %i(test rubocop rails_test)
+task :rubocop_examples do
+  EXAMPLES_DIR = "#{__dir__}/examples"
+  cd EXAMPLES_DIR do
+    sh "rubocop --format tap ."
+  end
+end
+
+task default: %i(test rubocop_rails rubocop_examples)

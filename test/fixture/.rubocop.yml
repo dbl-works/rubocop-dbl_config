@@ -1,1 +1,1 @@
-inherit_from: ../config/dbl.yml
+inherit_from: ../../config/dbl.yml
