@@ -15,13 +15,18 @@ RuboCop::RakeTask.new
 # rubocop:disable Rails/RakeEnvironment
 task :rails_test do
   rails_test_dir = "rails_test"
-  except_cops = %w[Style/StringLiterals Style/FrozenStringLiteralComment Style/SymbolArray Bundler/OrderedGems].freeze
+  except_cops = %w[
+    Style/StringLiterals
+    Style/FrozenStringLiteralComment
+    Style/SymbolArray
+    Bundler/OrderedGems
+    Style/ClassAndModuleChildren].freeze
 
   sh "rails new #{rails_test_dir} --skip-webpack-install"
   cp "./test/fixture/.rubocop.yml", "#{rails_test_dir}/.rubocop.yml"
   cd rails_test_dir do
     # Rails generates files which have some rubocop
-    # offenses(StringLiterals, FrozenStringLiteralComment SymbolArray Bundler/OrderedGems).
+    # offenses(StringLiterals, FrozenStringLiteralComment SymbolArray Bundler/OrderedGems Style/ClassAndModuleChildren).
     #
     # Run rubocop and check there are no offenses except those rules.
     sh "rubocop --format tap --except=#{except_cops.join(',')} ."
