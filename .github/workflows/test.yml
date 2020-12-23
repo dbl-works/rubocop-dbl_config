@@ -1,16 +1,11 @@
 name: Test
-on: [push, pull_request]
+on: [push]
 jobs:
   test:
     strategy:
       matrix:
-        ruby: [2.5, 2.6, 2.7]
+        ruby: [2.6, 2.7]
         gemfile:
-          - gemfiles/rubocop_1.0.gemfile
-          - gemfiles/rubocop_1.1.gemfile
-          - gemfiles/rubocop_1.2.gemfile
-          - gemfiles/rubocop_1.3.gemfile
-          - gemfiles/rubocop_1.4.gemfile
           - gemfiles/rubocop_1.5.gemfile
           - gemfiles/rubocop_1.6.gemfile
     env:
