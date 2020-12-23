@@ -5,29 +5,21 @@ RuboCop configuration for our Ruby on Rails projects.
 
 Releases are published to [GitHub's Package Service](https://github.com/dbl-works/rubocop-dbl/packages/550489).
 
+
+## Installation
+
 Install from command line:
+
 ```shell
 gem install rubocop-dbl --version "0.1.0" --source "https://rubygems.pkg.github.com/dbl-works"
 ```
 
 install via Gemfile:
 ```ruby
-source "https://rubygems.pkg.github.com/dbl-works" do
-  gem "rubocop-dbl", "0.1.0"
-end
-```
-
-
-## Installation
-
-Add this line to your application's `Gemfile`:
-
-```ruby
 group :development, :test do
-  gem 'rubocop-dbl', github: 'dbl-works/rubocop-dbl'
+  gem "rubocop-dbl", "0.1.0", source: "https://rubygems.pkg.github.com/dbl-works"
 end
 ```
-
 
 
 ## Usage
