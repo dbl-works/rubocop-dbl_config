@@ -25,7 +25,7 @@ module RubocopDblConfig
         def config_file_content
           <<~HEREDOC
             inherit_gem:
-              rubocop-dbl_config:
+              rubocop-dbl:
                 - config/dbl.yml
           HEREDOC
         end

@@ -16,7 +16,6 @@ AllCops:
   UseCache: true
   MaxFilesInCache: 5
   CacheRootDirectory: ./tmp/**
-  # rubocop-rails_config still supports Ruby 2.4
   TargetRubyVersion: 2.7.2
   Exclude:
     - '**/tmp/**/*'
@@ -26,7 +25,7 @@ AllCops:
     - 'actionmailbox/test/dummy/**/*'
     - 'actiontext/test/dummy/**/*'
     - '**/node_modules/**/*'
-    # Additional exclude files by rubocop-rails_config
+    # Additional exclude files by rubocop-rails
     - 'bin/**/*'
     - 'config/**/*'
     - 'db/**/*'
