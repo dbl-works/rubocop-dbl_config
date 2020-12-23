@@ -14,7 +14,7 @@ RuboCop::RakeTask.new
 
 task :rails_test do
   RAILS_TEST_DIR = "rails_test"
-  EXCEPT_COPS = ["Style/StringLiterals", "Style/FrozenStringLiteralComment"].freeze
+  EXCEPT_COPS = %w(Style/StringLiterals Style/FrozenStringLiteralComment Style/SymbolArray).freeze
 
   sh "rails new #{RAILS_TEST_DIR} --skip-webpack-install"
   cp "./test/fixture/.rubocop.yml", "#{RAILS_TEST_DIR}/.rubocop.yml"
