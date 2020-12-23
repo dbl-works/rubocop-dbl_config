@@ -12,20 +12,20 @@ end
 
 RuboCop::RakeTask.new
 
-task :rails_test do
-  RAILS_TEST_DIR = "rails_test"
-  EXCEPT_COPS = %w(Style/StringLiterals Style/FrozenStringLiteralComment Style/SymbolArray).freeze
+task rails_test: :environment do
+  rails_test_dir = "rails_test"
+  except_cops = %w[Style/StringLiterals Style/FrozenStringLiteralComment Style/SymbolArray].freeze
 
-  sh "rails new #{RAILS_TEST_DIR} --skip-webpack-install"
-  cp "./test/fixture/.rubocop.yml", "#{RAILS_TEST_DIR}/.rubocop.yml"
-  cd RAILS_TEST_DIR do
+  sh "rails new #{rails_test_dir} --skip-webpack-install"
+  cp "./test/fixture/.rubocop.yml", "#{rails_test_dir}/.rubocop.yml"
+  cd rails_test_dir do
     # Rails generates files which have some rubocop
     # offenses(StringLiterals, FrozenStringLiteralComment).
     #
     # Run rubocop and check there are no offenses except those rules.
-    sh "rubocop --format tap --except=#{EXCEPT_COPS.join(",")} ."
+    sh "rubocop --format tap --except=#{except_cops.join(',')} ."
   end
-  rm_rf RAILS_TEST_DIR
+  rm_rf rails_test_dir
 end
 
-task default: %i(test rubocop rails_test)
+task default: %i[test rubocop rails_test]

@@ -10,13 +10,15 @@ Gem::Specification.new do |spec|
   spec.files                 = Dir["README.md", "LICENSE", "config/*.yml", "lib/**/*"]
   spec.homepage              = "https://github.com/dbl-works/rubocop-dbl_config"
   spec.license               = "MIT"
+  # rubocop:disable Gemspec/RequiredRubyVersion
   spec.required_ruby_version = ">= 2.4.0"
+  # rubocop:enable Gemspec/RequiredRubyVersion
 
+  spec.add_dependency "railties", ">= 5.0"
   spec.add_dependency "rubocop", ">= 1.5"
   spec.add_dependency "rubocop-ast", ">= 1.0.1"
-  spec.add_dependency "rubocop-performance", "~> 1.3"
-  spec.add_dependency "rubocop-rspec", "~> 2.1"
-  spec.add_dependency "rubocop-rails", "~> 2.0"
   spec.add_dependency "rubocop-packaging", "~> 0.4"
-  spec.add_dependency "railties", ">= 5.0"
+  spec.add_dependency "rubocop-performance", "~> 1.3"
+  spec.add_dependency "rubocop-rails", "~> 2.0"
+  spec.add_dependency "rubocop-rspec", "~> 2.1"
 end
