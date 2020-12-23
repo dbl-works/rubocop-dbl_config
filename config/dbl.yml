@@ -13,6 +13,9 @@ require:
 #############
 
 AllCops:
+  UseCache: true
+  MaxFilesInCache: 5
+  CacheRootDirectory: ./tmp/**
   # rubocop-rails_config still supports Ruby 2.4
   TargetRubyVersion: 2.7.2
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
@@ -31,10 +34,6 @@ AllCops:
     - 'config/**/*'
     - 'db/**/*'
 
-Performance:
-  Exclude:
-    - '**/test/**/*'
-
 # Prefer assert_not over assert !
 Rails/AssertNot:
   Include:
@@ -51,9 +50,7 @@ Rails/IndexBy:
 Rails/IndexWith:
   Enabled: true
 
-# Prefer &&/|| over and/or.
-Style/AndOr:
-  Enabled: true
+# Layout
 
 # Align `when` with `case`.
 Layout/CaseIndentation:
@@ -76,6 +73,12 @@ Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
   AutoCorrect: true
 
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+  SupportedStyles:
+    - with_first_parameter
+    - with_fixed_indentation
+
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
@@ -96,10 +99,6 @@ Layout/EmptyLinesAroundMethodBody:
 
 # In a regular module definition, no empty lines around the body.
 Layout/EmptyLinesAroundModuleBody:
-  Enabled: true
-
-# Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
-Style/HashSyntax:
   Enabled: true
 
 Layout/FirstArgumentIndentation:
@@ -145,6 +144,48 @@ Layout/SpaceBeforeComment:
 Layout/SpaceBeforeFirstArg:
   Enabled: true
 
+# Use `foo {}` not `foo{}`.
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+
+# Use `foo { bar }` not `foo {bar}`.
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyleForEmptyBraces: space
+
+# Use `{ a: 1 }` not `{a:1}`.
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+Layout/SpaceInsideParens:
+  Enabled: true
+
+# Detect hard tabs, no hard tabs.
+Layout/IndentationStyle:
+  Enabled: true
+
+# Empty lines should not have any spaces.
+Layout/TrailingEmptyLines:
+  Enabled: true
+
+# No trailing whitespace.
+Layout/TrailingWhitespace:
+  Enabled: true
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+# Style
+
+# Prefer &&/|| over and/or.
+Style/AndOr:
+  Enabled: true
+
+# Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
+Style/HashSyntax:
+  Enabled: true
+
 Style/DefWithParentheses:
   Enabled: true
 
@@ -168,42 +209,65 @@ Style/FrozenStringLiteralComment:
 Style/RedundantFreeze:
   Enabled: true
 
-# Use `foo {}` not `foo{}`.
-Layout/SpaceBeforeBlockBraces:
-  Enabled: true
-
-# Use `foo { bar }` not `foo {bar}`.
-Layout/SpaceInsideBlockBraces:
-  Enabled: true
-  EnforcedStyleForEmptyBraces: space
-
-# Use `{ a: 1 }` not `{a:1}`.
-Layout/SpaceInsideHashLiteralBraces:
-  Enabled: true
-
-Layout/SpaceInsideParens:
-  Enabled: true
-
 # Check quotes usage according to lint rule below.
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
 
-# Detect hard tabs, no hard tabs.
-Layout/IndentationStyle:
-  Enabled: true
-
-# Empty lines should not have any spaces.
-Layout/TrailingEmptyLines:
-  Enabled: true
-
-# No trailing whitespace.
-Layout/TrailingWhitespace:
-  Enabled: true
-
 # Use quotes for string literals when they are enough.
 Style/RedundantPercentQ:
   Enabled: true
+
+Style/ParenthesesAroundCondition:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+# enforces to use 'name'.to_sym over 'name'.intern and so on
+Style/StringMethods:
+  Enabled: true
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+  SupportedStyles:
+    - compact
+    - expanded
+
+Style/SymbolArray:
+  Enabled: true
+
+Style/RedundantBegin:
+  Enabled: true
+
+Style/RedundantReturn:
+  Enabled: true
+  AllowMultipleReturnValues: true
+
+Style/RedundantRegexpEscape:
+  Enabled: true
+
+Style/Semicolon:
+  Enabled: true
+  AllowAsExpressionSeparator: true
+
+# Prefer Foo.method over Foo::method
+Style/ColonMethodCall:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/TrivialAccessors:
+  Enabled: true
+
+# Lint
 
 Lint/AmbiguousOperator:
   Enabled: true
@@ -233,35 +297,11 @@ Lint/UselessAssignment:
 Lint/DeprecatedClassMethods:
   Enabled: true
 
-Style/ParenthesesAroundCondition:
-  Enabled: true
+# Performance
 
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
-
-Style/RedundantBegin:
-  Enabled: true
-
-Style/RedundantReturn:
-  Enabled: true
-  AllowMultipleReturnValues: true
-
-Style/RedundantRegexpEscape:
-  Enabled: true
-
-Style/Semicolon:
-  Enabled: true
-  AllowAsExpressionSeparator: true
-
-# Prefer Foo.method over Foo::method
-Style/ColonMethodCall:
-  Enabled: true
-
-Style/TrivialAccessors:
-  Enabled: true
+Performance:
+  Exclude:
+    - '**/test/**/*'
 
 Performance/FlatMap:
   Enabled: true
@@ -289,3 +329,13 @@ Performance/DeletePrefix:
 
 Performance/DeleteSuffix:
   Enabled: true
+
+# Rspec rules
+
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - if
+    - and
