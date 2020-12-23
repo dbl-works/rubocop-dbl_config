@@ -28,4 +28,4 @@ task :rails_test do
   rm_rf RAILS_TEST_DIR
 end
 
-task default: [:test, :rubocop, :rails_test]
+task default: %i(test rubocop rails_test)
