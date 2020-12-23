@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.description           = "RuboCop configuration for our Ruby on Rails projects"
   spec.author                = "Team DBL :rocket:"
   spec.email                 = "me@toshimaru.net"
-  spec.files                  = Dir["README.md", "LICENSE", "config/*.yml", "lib/**/*"]
+  spec.files                 = Dir["README.md", "LICENSE", "config/*.yml", "lib/**/*"]
   spec.homepage              = "https://github.com/dbl-works/rubocop-dbl"
   spec.license               = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
