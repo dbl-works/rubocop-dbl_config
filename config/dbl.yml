@@ -13,6 +13,9 @@ require:
 #############
 
 AllCops:
+  UseCache: true
+  MaxFilesInCache: 5
+  CacheRootDirectory: ./tmp/**
   # rubocop-rails_config still supports Ruby 2.4
   TargetRubyVersion: 2.7.2
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
