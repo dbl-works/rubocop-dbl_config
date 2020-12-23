@@ -16,7 +16,6 @@ AllCops:
   UseCache: true
   MaxFilesInCache: 5
   CacheRootDirectory: ./tmp/**
-  # rubocop-rails_config still supports Ruby 2.4
   TargetRubyVersion: 2.7.2
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
   # to ignore them, so only the ones explicitly set in this file are enabled.
@@ -29,7 +28,7 @@ AllCops:
     - 'actionmailbox/test/dummy/**/*'
     - 'actiontext/test/dummy/**/*'
     - '**/node_modules/**/*'
-    # Additional exclude files by rubocop-rails_config
+    # Additional exclude files by rubocop-rails
     - 'bin/**/*'
     - 'config/**/*'
     - 'db/**/*'

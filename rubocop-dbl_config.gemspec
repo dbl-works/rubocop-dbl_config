@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name                  = "rubocop-dbl_config"
+  spec.name                  = "rubocop-dbl"
   spec.version               = "0.1.0"
   spec.summary               = "RuboCop configuration for our Ruby on Rails projects"
   spec.description           = "RuboCop configuration for our Ruby on Rails projects"
   spec.author                = "Team DBL :rocket:"
   spec.email                 = "me@toshimaru.net"
   spec.files                 = Dir["README.md", "LICENSE", "config/*.yml", "lib/**/*"]
-  spec.homepage              = "https://github.com/dbl-works/rubocop-dbl_config"
+  spec.homepage              = "https://github.com/dbl-works/rubocop-dbl"
   spec.license               = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
