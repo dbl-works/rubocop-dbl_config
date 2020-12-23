@@ -77,7 +77,7 @@ irb
 
 ## Publish as package on GitHub packages
 * create a valid PAT (personal access token) for your GitHub user with full access to packages (read & write) and private repos (read), read the [docs](https://docs.github.com/en/free-pro-team@latest/packages/guides/configuring-rubygems-for-use-with-github-packages) for more details
-* have a `~/gemrc` file on your local machine holding the following information:
+* add following information to `~/.gemrc`:
 
 ```
 ---
