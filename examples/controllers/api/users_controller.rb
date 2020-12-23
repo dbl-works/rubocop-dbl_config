@@ -8,7 +8,7 @@ module Api
     private
 
     def memoised_method
-      @memoised_method ||= some_thing
+      @memoised_method ||= 'some_thing'
     end
   end
 end
