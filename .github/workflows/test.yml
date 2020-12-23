@@ -4,7 +4,7 @@ jobs:
   test:
     strategy:
       matrix:
-        ruby: [2.5, 2.6, 2.7]
+        ruby: [2.6, 2.7]
         gemfile:
           - gemfiles/rubocop_1.5.gemfile
           - gemfiles/rubocop_1.6.gemfile
