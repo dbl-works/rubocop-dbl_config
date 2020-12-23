@@ -70,7 +70,7 @@ Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
   AutoCorrect: true
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
   SupportedStyles:
     - with_first_parameter
@@ -169,7 +169,7 @@ Layout/TrailingEmptyLines:
 Layout/TrailingWhitespace:
   Enabled: true
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
