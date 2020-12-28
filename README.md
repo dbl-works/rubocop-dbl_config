@@ -67,3 +67,10 @@ inherit_gem:
 AllCops:
   TargetRubyVersion: 2.7.2
 ```
+
+## build & install gem locally
+```
+gem build rubocop-dbl.gemspec
+gem install rubocop-dbl-0.1.0.gem
+irb
+```
