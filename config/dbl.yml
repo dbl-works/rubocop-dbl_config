@@ -30,6 +30,12 @@ AllCops:
     - 'config/**/*'
     - 'db/**/*'
 
+Rails/HttpStatus:
+  Enabled: false
+
+Rails/ApplicationController:
+  Enabled: false
+
 # Prefer assert_not over assert !
 Rails/AssertNot:
   Include:
