@@ -1,4 +1,4 @@
-# DBL Rubocop Config
+# DBL Rubocop
 
 ![Test](https://github.com/dbl-works/rubocop-dbl/workflows/Test/badge.svg?branch=main)
 
@@ -14,13 +14,13 @@ Releases are published to [GitHub's Package Service](https://github.com/dbl-work
 Install from command line:
 
 ```shell
-gem install rubocop-dbl --version "0.1.0" --source "https://rubygems.pkg.github.com/dbl-works"
+gem install rubocop-dbl --version "0.2.0" --source "https://rubygems.pkg.github.com/dbl-works"
 ```
 
 install via Gemfile:
 ```ruby
 group :development, :test do
-  gem "rubocop-dbl", "0.1.0", source: "https://rubygems.pkg.github.com/dbl-works"
+  gem "rubocop-dbl", "~> 0.2.0", source: "https://rubygems.pkg.github.com/dbl-works"
 end
 ```
 
@@ -37,8 +37,8 @@ inherit_gem:
 
 Or just run:
 
-```console
-$ rails generate rubocop-dbl:install
+```shell
+rails generate rubocop_dbl:install
 ```
 
 

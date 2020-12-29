@@ -1,3 +1,6 @@
+## 0.2.1, Tue, 29 Dec 2020
+* fix filename for generator `rails generate rubocop_dbl:install` (files and dirs cannot have dashes for Rails's generators)
+
 ## 0.2.0, Tue, 29 Dec 2020
 * fixes file names and other general code clean up
 * enable rubocop-rails' default cops
