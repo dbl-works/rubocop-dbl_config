@@ -30,6 +30,13 @@ AllCops:
     - 'config/**/*'
     - 'db/**/*'
 
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
 Rails/HttpStatus:
   Enabled: false
 
