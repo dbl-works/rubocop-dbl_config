@@ -37,8 +37,8 @@ inherit_gem:
 
 Or just run:
 
-```console
-$ rails generate rubocop-dbl:install
+```shell
+rails generate rubocop_dbl:install
 ```
 
 
