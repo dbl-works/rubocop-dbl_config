@@ -1,4 +1,4 @@
-# DBL Rubocop Config
+# DBL Rubocop
 
 ![Test](https://github.com/dbl-works/rubocop-dbl/workflows/Test/badge.svg?branch=main)
 
