@@ -1,7 +1,6 @@
 # DBL Rubocop Config
 
-* add a gem version here (private package!)
-* add a CI badge
+![Test](https://github.com/dbl-works/rubocop-dbl/workflows/Test/badge.svg?branch=main)
 
 
 RuboCop configuration for our Ruby on Rails projects.
