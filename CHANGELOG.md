@@ -1,4 +1,4 @@
-## unreleased
+## 0.2.0, Tue, 29 Dec 2020
 * fixes file names and other general code clean up
 * enable rubocop-rails' default cops
 * disable extra indentation for private methods
