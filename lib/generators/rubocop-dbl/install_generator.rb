@@ -13,7 +13,7 @@ module RubocopDblConfig
         send :"#{file_method}_file", config_file_path, config_file_content
       end
 
-    private
+      private
 
       def config_file_exists?
         File.exist?(config_file_path)
@@ -24,11 +24,11 @@ module RubocopDblConfig
       end
 
       def config_file_content
-        <<-EOS.strip_heredoc
+        <<~HEREDOC
           inherit_gem:
             rubocop-dbl:
               - config/dbl.yml
-        EOS
+        HEREDOC
       end
     end
   end

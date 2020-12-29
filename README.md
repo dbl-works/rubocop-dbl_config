@@ -1,4 +1,7 @@
 # DBL Rubocop Config
+
+![Test](https://github.com/dbl-works/rubocop-dbl/workflows/Test/badge.svg?branch=main)
+
 RuboCop configuration for our Ruby on Rails projects.
 
 [Official RoR RuboCop Configuration](https://github.com/rails/rails/blob/master/.rubocop.yml).
