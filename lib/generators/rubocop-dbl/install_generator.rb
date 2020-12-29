@@ -15,21 +15,21 @@ module RubocopDblConfig
 
       private
 
-        def config_file_exists?
-          File.exist?(config_file_path)
-        end
+      def config_file_exists?
+        File.exist?(config_file_path)
+      end
 
-        def config_file_path
-          ".rubocop.yml"
-        end
+      def config_file_path
+        ".rubocop.yml"
+      end
 
-        def config_file_content
-          <<~HEREDOC
-            inherit_gem:
-              rubocop-dbl:
-                - config/dbl.yml
-          HEREDOC
-        end
+      def config_file_content
+        <<~HEREDOC
+          inherit_gem:
+            rubocop-dbl:
+              - config/dbl.yml
+        HEREDOC
+      end
     end
   end
 end
