@@ -9,7 +9,8 @@ Rake::TestTask.new(:test) do |t|
   t.test_files = FileList['test/**/*_test.rb']
 end
 
-task rubocop_rails: :environment do
+# rubocop:disable Rails/RakeEnvironment
+task :rubocop_rails do
   rails_test_dir = 'tmp/rails_test'
   except_cops = %w[Style/StringLiterals Style/FrozenStringLiteralComment Style/SymbolArray].freeze
 
@@ -24,11 +25,12 @@ task rubocop_rails: :environment do
     sh "rubocop --format tap --except=#{except_cops.join(',')} ."
   end
 end
-task rubocop_examples: :environment do
+task :rubocop_examples do
   examples_dir = "#{__dir__}/examples"
   cd examples_dir do
     sh 'rubocop --format tap .'
   end
 end
+# rubocop:enable Rails/RakeEnvironment
 
 task default: %i[test rubocop_rails rubocop_examples]
