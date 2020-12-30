@@ -5,6 +5,10 @@ module Api
     def empty_method
     end
 
+    def non_empty_method
+      memoised_method.nil?
+    end
+
     private
 
     def memoised_method
