@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require "rails/generators/base"
-require "active_support/core_ext/string"
+require 'rails/generators/base'
+require 'active_support/core_ext/string'
 
 module RubocopDbl
   module Generators
     class InstallGenerator < Rails::Generators::Base
-      desc "Creates a .rubocop.yml config file that inherits from the official Ruby on Rails .rubocop.yml."
+      desc 'Creates a .rubocop.yml config file that inherits from the official Ruby on Rails .rubocop.yml.'
 
       def create_config_file
         file_method = config_file_exists? ? :prepend : :create
@@ -20,7 +20,7 @@ module RubocopDbl
       end
 
       def config_file_path
-        ".rubocop.yml"
+        '.rubocop.yml'
       end
 
       def config_file_content
