@@ -17,14 +17,17 @@ Install from command line:
 gem install rubocop-dbl --version "0.2.0" --source "https://rubygems.pkg.github.com/dbl-works"
 ```
 
-DO NOT DO THIS:
 install via Gemfile:
+
+DO NOT DO THIS:
 ```ruby
 group :development, :test do
   gem "rubocop-dbl", "~> 0.2.0", source: "https://rubygems.pkg.github.com/dbl-works"
 end
 ```
+
 INSTEAD:
+
 ```ruby
 # Gemfile
 group :development, :test do
