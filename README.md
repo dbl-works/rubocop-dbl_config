@@ -17,12 +17,22 @@ Install from command line:
 gem install rubocop-dbl --version "0.2.0" --source "https://rubygems.pkg.github.com/dbl-works"
 ```
 
+DO NOT DO THIS:
 install via Gemfile:
 ```ruby
 group :development, :test do
   gem "rubocop-dbl", "~> 0.2.0", source: "https://rubygems.pkg.github.com/dbl-works"
 end
 ```
+INSTEAD:
+```ruby
+# Gemfile
+group :development, :test do
+  gem 'rubocop-dbl', git: 'git@github.com:dbl-works/rubocop-dbl', branch: :main
+end
+```
+WHY: we cannot install a publich (!!) package from GitHub packages without a PAT (personal access token), see this [thread](https://github.community/t/download-from-github-package-registry-without-authentication/14407).
+E.g. CircleCI does not allow reading a ENV var within the ci.yml, hence it is impossible to configure bundle to have auth for GitHub packages (this might work using GitHub actions).
 
 
 ## Usage
