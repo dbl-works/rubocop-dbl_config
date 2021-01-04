@@ -34,7 +34,7 @@ group :development, :test do
   gem 'rubocop-dbl', git: 'git@github.com:dbl-works/rubocop-dbl', branch: :main
 end
 ```
-WHY: we cannot install a publich (!!) package from GitHub packages without a PAT (personal access token), see this [thread](https://github.community/t/download-from-github-package-registry-without-authentication/14407).
+WHY: we cannot install a public (!!) package from GitHub packages without a PAT (personal access token), see this [thread](https://github.community/t/download-from-github-package-registry-without-authentication/14407).
 E.g. CircleCI does not allow reading a ENV var within the ci.yml, hence it is impossible to configure bundle to have auth for GitHub packages (this might work using GitHub actions).
 
 
