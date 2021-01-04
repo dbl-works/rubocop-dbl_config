@@ -1,3 +1,9 @@
+## Unreleased
+
+## 0.2.2, Mon, 04 Jan 2021
+* Specify envs for rails (#20)
+* enforce single quotes (#19)
+
 ## 0.2.1, Tue, 29 Dec 2020
 * fix filename for generator `rails generate rubocop_dbl:install` (files and dirs cannot have dashes for Rails's generators)
 
