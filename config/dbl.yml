@@ -235,11 +235,13 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
 
 Layout/SpaceBeforeBrackets:
+  MinimumRubocopVersion: 1.7.0
   Enabled: true
   EnforcedStyle: space
   EnforcedStyleForEmptyBraces: space
 
 Style/HashExcept:
+  MinimumRubocopVersion: 1.7.0
   Enabled: false # makes only sense for Ruby 3+
 
 
@@ -400,6 +402,7 @@ Lint/UnmodifiedReduceAccumulator:
   Enabled: true
 
 Lint/AmbiguousAssignment:
+  MinimumRubocopVersion: 1.7.0
   Enabled: true
 
 
