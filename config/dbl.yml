@@ -234,6 +234,15 @@ Layout/HashAlignment:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
+Layout/SpaceBeforeBrackets:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: space
+
+Style/HashExcept:
+  Enabled: false # makes only sense for Ruby 3+
+
+
 # Style
 
 # Prefer &&/|| over and/or.
@@ -389,6 +398,10 @@ Lint/UnexpectedBlockArity:
 
 Lint/UnmodifiedReduceAccumulator:
   Enabled: true
+
+Lint/AmbiguousAssignment:
+  Enabled: true
+
 
 # Performance
 
