@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 SUPPORTED_VERSIONS = %w[1.5 1.6].freeze
 
 SUPPORTED_VERSIONS.each do |version|

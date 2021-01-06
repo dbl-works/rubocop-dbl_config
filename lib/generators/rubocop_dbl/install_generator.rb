@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails/generators/base'
 require 'active_support/core_ext/string'
 
