@@ -17,6 +17,7 @@ AllCops:
   MaxFilesInCache: 5
   CacheRootDirectory: ./tmp/**
   TargetRubyVersion: 2.7.2
+  NewCops: enable
   Exclude:
     - '**/tmp/**/*'
     - '**/templates/**/*'
@@ -233,6 +234,7 @@ Layout/HashAlignment:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
+
 # Style
 
 # Prefer &&/|| over and/or.
@@ -388,6 +390,7 @@ Lint/UnexpectedBlockArity:
 
 Lint/UnmodifiedReduceAccumulator:
   Enabled: true
+
 
 # Performance
 
