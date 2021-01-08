@@ -337,6 +337,11 @@ Style/RedundantArgument:
 Style/SwapValues:
   Enabled: true
 
+# Metrics
+
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context', 'feature', 'scenario']
+
 # Lint
 
 Lint/AmbiguousOperator:
@@ -473,3 +478,14 @@ RSpec/ContextWording:
     - without
     - if
     - and
+
+RSpec/Capybara/FeatureMethods:
+  EnabledMethods:
+    - feature
+    - scenario
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 6
