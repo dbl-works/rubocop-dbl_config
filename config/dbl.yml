@@ -231,8 +231,8 @@ Layout/TrailingWhitespace:
   Enabled: true
 
 Layout/HashAlignment:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: key
+  EnforcedColonStyle: key
 
 
 # Style
@@ -336,6 +336,12 @@ Style/RedundantArgument:
 
 Style/SwapValues:
   Enabled: true
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
 
 # Lint
 
