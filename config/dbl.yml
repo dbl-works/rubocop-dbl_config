@@ -235,6 +235,11 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
 
 
+# Naming
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
 # Style
 
 # Prefer &&/|| over and/or.
