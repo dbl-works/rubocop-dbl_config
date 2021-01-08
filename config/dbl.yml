@@ -235,6 +235,11 @@ Layout/HashAlignment:
   EnforcedColonStyle: key
 
 
+# Naming
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
 # Style
 
 # Prefer &&/|| over and/or.
@@ -342,6 +347,11 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
+
+# Metrics
+
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context', 'feature', 'scenario']
 
 # Lint
 
@@ -479,3 +489,14 @@ RSpec/ContextWording:
     - without
     - if
     - and
+
+RSpec/Capybara/FeatureMethods:
+  EnabledMethods:
+    - feature
+    - scenario
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 6
