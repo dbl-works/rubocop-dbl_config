@@ -7,8 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <hr />
 
 ## [Unreleased]
+
+## [0.3.0] - Mon, 11 Jan 2021
 * enable new cops by default [#23](https://github.com/dbl-works/rubocop-dbl/pull/23)
 * enforce never having frozen string literal comments
+* Change Metrics/BlockLength, RSpec/Capybara/FeatureMethods, RSpec/NestedGroups, RSpec/MultipleMemoizedHelpers [#25](https://github.com/dbl-works/rubocop-dbl/pull/25)
+* EnforcedStyle: snake_case [#26](https://github.com/dbl-works/rubocop-dbl/pull/26)
+* Change Layout/HashAlignment and Style/TrailingCommaInArrayLiteral and Style/TrailingCommaInHashLiteral [#24](https://github.com/dbl-works/rubocop-dbl/pull/24)
 
 ## [0.2.2] - Mon, 04 Jan 2021
 * Specify envs for rails (#20)
