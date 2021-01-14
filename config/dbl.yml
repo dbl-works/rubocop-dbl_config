@@ -341,6 +341,9 @@ Style/RedundantArgument:
 
 Style/SwapValues:
   Enabled: true
+  
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
