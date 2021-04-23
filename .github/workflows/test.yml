@@ -35,3 +35,6 @@ jobs:
 
       - name: Run Test
         run: bundle exec rake
+
+      - name: Run Changelog linter
+        run: bundle exec parse CHANGELOG.md
