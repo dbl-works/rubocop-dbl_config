@@ -19,4 +19,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-performance', '~> 1.3'
   spec.add_dependency 'rubocop-rails', '~> 2.0'
   spec.add_dependency 'rubocop-rspec', '~> 2.1'
+
+  spec.add_development_dependency 'parse_a_changelog'
 end
