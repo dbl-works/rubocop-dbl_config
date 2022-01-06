@@ -7,7 +7,7 @@
 # For example:
 #
 #     Rails/ActionFilter:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/32'
+#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/33'
 #       Enabled: false
 #
 
