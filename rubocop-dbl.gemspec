@@ -21,4 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-rspec', '~> 2.1'
 
   spec.add_development_dependency 'parse_a_changelog'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end
