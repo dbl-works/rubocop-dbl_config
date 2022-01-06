@@ -1,3 +1,15 @@
+# Defaults for this cop are found here:
+# https://github.com/rubocop/rubocop-rails/blob/master/config/default.yml
+#
+# Add customizations below.
+#
+# Ensure to document why we change a default by linking the corresponding PR.
+# For example:
+#
+#     Rails/ActionFilter:
+#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/32'
+#       Enabled: false
+#
 Rails/UnknownEnv:
   Environments:
     - production
