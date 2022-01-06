@@ -61,7 +61,10 @@ rails generate rubocop_dbl:install
 
 ### TargetRubyVersion
 
-We only support the latest 2 versions of ruby, which is currently >= 2.6. See [test.yml](.github/workflows/test.yml) for details
+We only support the latest 2 versions of ruby, which is currently >= 2.7.
+We only support the latest 2 versions of rails, which is currently >= 6.0.
+See [test.yml](.github/workflows/test.yml) for details.
+
 
 If you'd like to change `TargetRubyVersion`, see [Customization](#customization).
 
