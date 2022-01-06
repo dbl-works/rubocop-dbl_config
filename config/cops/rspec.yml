@@ -1,0 +1,18 @@
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - if
+    - and
+
+RSpec/Capybara/FeatureMethods:
+  EnabledMethods:
+    - feature
+    - scenario
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 6
