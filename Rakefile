@@ -25,7 +25,7 @@ task :rails_test do
   cp './test/fixture/.rubocop.yml', "#{rails_test_dir}/.rubocop.yml"
   cd rails_test_dir do
     # Rails generates files which have some rubocop
-    # offenses(StringLiterals, FrozenStringLiteralComment SymbolArray Bundler/OrderedGems Style/ClassAndModuleChildren).
+    # offenses(Style/StringLiterals, FrozenStringLiteralComment SymbolArray Bundler/OrderedGems Style/ClassAndModuleChildren).
     #
     # Run rubocop and check there are no offenses except those rules.
     sh "rubocop --format tap --except=#{except_cops.join(',')} ."
