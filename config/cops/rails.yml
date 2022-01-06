@@ -11,21 +11,6 @@ Rails/HttpStatus:
 Rails/ApplicationController:
   Enabled: false
 
-# Prefer assert_not over assert !
-Rails/AssertNot:
-  Include:
-    - '**/test/**/*'
-
-# Prefer assert_not_x over refute_x
-Rails/RefuteMethods:
-  Include:
-    - '**/test/**/*'
-
-Rails/IndexBy:
-  Enabled: true
-
-Rails/IndexWith:
-  Enabled: true
 
 Rails/ActiveRecordCallbacksOrder:
   Enabled: true
