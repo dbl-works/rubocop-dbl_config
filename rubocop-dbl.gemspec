@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'railties', '>= 5.0'
   spec.add_dependency 'rubocop', '>= 1.5'
   spec.add_dependency 'rubocop-ast', '>= 1.0.1'
+  spec.add_dependency 'rubocop-md', '~> 1.0'
   spec.add_dependency 'rubocop-packaging', '~> 0.4'
   spec.add_dependency 'rubocop-performance', '~> 1.3'
   spec.add_dependency 'rubocop-rails', '~> 2.0'
