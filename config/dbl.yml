@@ -6,14 +6,14 @@ require:
 
 
 inherit_from:
-  - ./cops/layout.yml
-  - ./cops/lint.yml
-  - ./cops/metrics.yml
-  - ./cops/naming.yml
-  - ./cops/performance.yml
-  - ./cops/rails.yml
-  - ./cops/rspec.yml
-  - ./cops/style.yml
+  - cops/layout.yml
+  - cops/lint.yml
+  - cops/metrics.yml
+  - cops/naming.yml
+  - cops/performance.yml
+  - cops/rails.yml
+  - cops/rspec.yml
+  - cops/style.yml
 
 
 AllCops:
