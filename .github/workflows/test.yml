@@ -4,11 +4,12 @@ jobs:
   test:
     strategy:
       matrix:
-        ruby: [2.6, 2.7, 3.0]
+        ruby: [2.7, 3.0]
         gemfile:
-          - gemfiles/rubocop_1.8.gemfile
-          - gemfiles/rubocop_1.15.gemfile
           - gemfiles/rubocop_1.24.gemfile
+          - gemfiles/rubocop_1.7.gemfile
+          - gemfiles/rails_6.1.gemfile
+          - gemfiles/rails_7.0.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
