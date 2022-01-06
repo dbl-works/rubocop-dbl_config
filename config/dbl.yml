@@ -3,6 +3,7 @@ require:
   - rubocop-performance
   - rubocop-rspec
   - rubocop-rails
+  - rubocop-md
 
 #############
 #############
@@ -341,7 +342,7 @@ Style/RedundantArgument:
 
 Style/SwapValues:
   Enabled: true
-  
+
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
