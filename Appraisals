@@ -1,3 +1,8 @@
+#
+# run
+# > bundle exec appraisal install
+# to generate gemfiles
+#
 SUPPORTED_RUBOCOP_VERSIONS = %w[
   1.7
   1.24
