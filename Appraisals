@@ -11,11 +11,13 @@ SUPPORTED_RAILS_VERSIONS = %w[
 SUPPORTED_RUBOCOP_VERSIONS.each do |version|
   appraise "rubocop-#{version}" do
     gem 'rubocop', "~> #{version}.0"
+    gem 'rails', '~> 6.0'
   end
 end
 
 SUPPORTED_RAILS_VERSIONS.each do |version|
   appraise "rails-#{version}" do
+    gem 'rubocop', '~> 1'
     gem 'rails', "~> #{version}.0"
   end
 end
