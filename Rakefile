@@ -19,6 +19,7 @@ task :rails_test do
     Style/SymbolArray
     Bundler/OrderedGems
     Style/ClassAndModuleChildren
+    Layout/SpaceInsidePercentLiteralDelimiters
   ].freeze
 
   sh "rails new #{rails_test_dir} --skip-webpack-install"
@@ -26,6 +27,7 @@ task :rails_test do
   cd rails_test_dir do
     # Rails generates files which have some rubocop offenses:
     # Style/StringLiterals, FrozenStringLiteralComment SymbolArray Bundler/OrderedGems Style/ClassAndModuleChildren
+    # Layout/SpaceInsidePercentLiteralDelimiters
     #
     # Run rubocop and check there are no offenses except those rules.
     sh "rubocop --format tap --except=#{except_cops.join(',')} ."
