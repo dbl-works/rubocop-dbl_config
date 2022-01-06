@@ -22,7 +22,7 @@ install via Gemfile:
 DO NOT DO THIS:
 ```ruby
 group :development, :test do
-  gem "rubocop-dbl", "~> 0.2.0", source: "https://rubygems.pkg.github.com/dbl-works"
+  gem 'rubocop-dbl', '~> 0.2.0', source: 'https://rubygems.pkg.github.com/dbl-works'
 end
 ```
 
