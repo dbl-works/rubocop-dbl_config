@@ -14,7 +14,7 @@
 
 # @NOTE: added: "if", "and"
 RSpec/ContextWording:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   Prefixes:
     - when
     - with
@@ -25,18 +25,18 @@ RSpec/ContextWording:
 
 # @NOTE: by default, no methods are enabled
 RSpec/Capybara/FeatureMethods:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   EnabledMethods:
     - feature
     - scenario
 
 # @NOTE: increased from 3 to 5
 RSpec/NestedGroups:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   Max: 5
 
 
 # @NOTE: increased from 5 to 6
 RSpec/MultipleMemoizedHelpers:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   Max: 6
