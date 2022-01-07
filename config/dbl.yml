@@ -16,10 +16,10 @@ inherit_from:
   - cops/style.yml
 
 
+# if you want to change the cache directory, simple set `RUBOCOP_CACHE_ROOT` for your local shell.
+# see: https://docs.rubocop.org/rubocop/usage/caching.html
 AllCops:
   UseCache: true
-  MaxFilesInCache: 5
-  CacheRootDirectory: ./tmp/**
   TargetRubyVersion: 2.7.2
   NewCops: enable
   Exclude:
