@@ -1,2 +1,17 @@
+# Defaults for this cop are found here:
+# https://github.com/rubocop/rubocop/blob/master/config/default.yml
+#
+# Add customizations below.
+#
+# Ensure to document why we change a default by linking the corresponding PR.
+# For example:
+#
+#     Performance/AncestorsInclude:
+#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/37'
+#       Enabled: true
+#
+
+# @NOTE: changed EnforcedStyle from "normalcase" to "snake_case"
 Naming/VariableNumber:
+  Reference: 'we have no reference for this change'
   EnforcedStyle: snake_case
