@@ -1,51 +1,47 @@
-Lint/AmbiguousOperator:
-  Enabled: true
+# Defaults for this cop are found here:
+# https://github.com/rubocop/rubocop/blob/master/config/default.yml
+#
+# Add customizations below.
+#
+# Ensure to document why we change a default by linking the corresponding PR.
+# For example:
+#
+#     Lint/AmbiguousOperator:
+#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/36'
+#       Enabled: true
+#
 
-Lint/AmbiguousRegexpLiteral:
-  Enabled: true
-
-Lint/ErbNewArguments:
-  Enabled: true
-
-# Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
-Lint/RequireParentheses:
-  Enabled: true
-
-Lint/ShadowingOuterLocalVariable:
-  Enabled: true
-
-Lint/RedundantStringCoercion:
-  Enabled: true
-
-Lint/UriEscapeUnescape:
-  Enabled: true
-
-Lint/UselessAssignment:
-  Enabled: true
-
-Lint/DeprecatedClassMethods:
-  Enabled: true
-
+#
+# @NOTE: the following cops are on "pending" by default
+#
 Lint/DuplicateBranch:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/DuplicateRegexpCharacterClassElement:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/EmptyBlock:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/EmptyClass:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/NoReturnInBeginEndBlocks:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/ToEnumArguments:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/UnexpectedBlockArity:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/UnmodifiedReduceAccumulator:
+  Reference: 'we have no reference for this change'
   Enabled: true
