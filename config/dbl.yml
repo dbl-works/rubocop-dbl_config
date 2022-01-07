@@ -16,6 +16,8 @@ inherit_from:
   - cops/style.yml
 
 
+# if you want to change the cache directory, simple set `XDG_CACHE_HOME` for your local shell.
+# see: https://docs.rubocop.org/rubocop/usage/caching.html
 AllCops:
   UseCache: true
   MaxFilesInCache: 5
