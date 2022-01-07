@@ -13,5 +13,5 @@
 
 # @NOTE: changed EnforcedStyle from "normalcase" to "snake_case"
 Naming/VariableNumber:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/26'
   EnforcedStyle: snake_case
