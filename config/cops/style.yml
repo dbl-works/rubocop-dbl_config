@@ -51,17 +51,17 @@ Style/Documentation:
 
 # @NOTE: changed EnforcedStyleForMultiline from "no_comma" to "comma"
 Style/TrailingCommaInArguments:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/27'
   EnforcedStyleForMultiline: comma
 
 # @NOTE: changed EnforcedStyleForMultiline from "no_comma" to "comma"
 Style/TrailingCommaInArrayLiteral:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/24'
   EnforcedStyleForMultiline: comma
 
 # @NOTE: changed EnforcedStyleForMultiline from "no_comma" to "comma"
 Style/TrailingCommaInHashLiteral:
-  Reference: 'we have no reference for this change'
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/24'
   EnforcedStyleForMultiline: comma
 
 #
