@@ -1,6 +1,6 @@
 # DBL Rubocop
 
-![Test](https://github.com/dbl-works/rubocop-dbl/workflows/Test/badge.svg?branch=main)
+[![Test](https://github.com/dbl-works/rubocop-dbl/actions/workflows/test.yml/badge.svg)](https://github.com/dbl-works/rubocop-dbl/actions/workflows/test.yml)
 
 RuboCop configuration for our Ruby on Rails projects.
 

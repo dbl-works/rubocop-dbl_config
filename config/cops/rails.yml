@@ -1,0 +1,80 @@
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
+Rails/HttpStatus:
+  Enabled: false
+
+Rails/ApplicationController:
+  Enabled: false
+
+# Prefer assert_not over assert !
+Rails/AssertNot:
+  Include:
+    - '**/test/**/*'
+
+# Prefer assert_not_x over refute_x
+Rails/RefuteMethods:
+  Include:
+    - '**/test/**/*'
+
+Rails/IndexBy:
+  Enabled: true
+
+Rails/IndexWith:
+  Enabled: true
+
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+
+Rails/AfterCommitOverride:
+  Enabled: true
+
+Rails/AttributeDefaultBlockValue:
+  Enabled: true
+
+Rails/FindById:
+  Enabled: true
+
+Rails/Inquiry:
+  Enabled: true
+
+Rails/MailerName:
+  Enabled: true
+
+Rails/MatchRoute:
+  Enabled: true
+
+Rails/NegateInclude:
+  Enabled: true
+
+Rails/Pluck:
+  Enabled: true
+
+Rails/PluckInWhere:
+  Enabled: true
+
+Rails/RenderInline:
+  Enabled: true
+
+Rails/RenderPlainText:
+  Enabled: true
+
+Rails/ShortI18n:
+  Enabled: true
+  EnforcedStyle: aggressive
+
+Rails/SquishedSQLHeredocs:
+  Enabled: true
+
+Rails/WhereEquals:
+  Enabled: true
+
+Rails/WhereExists:
+  Enabled: true
+
+Rails/WhereNot:
+  Enabled: true
