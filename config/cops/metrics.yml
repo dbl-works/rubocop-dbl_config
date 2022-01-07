@@ -1,2 +1,21 @@
+# Defaults for this cop are found here:
+# https://github.com/rubocop/rubocop/blob/master/config/default.yml
+#
+# Add customizations below.
+#
+# Ensure to document why we change a default by linking the corresponding PR.
+# For example:
+#
+#     Metrics/BlockLength:
+#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/37'
+#       Enabled: true
+#
+
+# @NOTE: IgnoredMethods by default only contains "refine"
 Metrics/BlockLength:
-  IgnoredMethods: ['describe', 'context', 'feature', 'scenario']
+  Reference: 'we have no reference for this change'
+  IgnoredMethods:
+    - describe
+    - context
+    - feature
+    - scenario
