@@ -6,7 +6,7 @@
 # Ensure to document why we change a default by linking the corresponding PR.
 # For example:
 #
-#     Performance/AncestorsInclude:
+#     Layout/EndAlignment:
 #       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/35'
 #       Enabled: true
 #
