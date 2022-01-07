@@ -6,8 +6,8 @@
 # Ensure to document why we change a default by linking the corresponding PR.
 # For example:
 #
-#     Performance/AncestorsInclude:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/36'
+#     Metrics/BlockLength:
+#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/37'
 #       Enabled: true
 #
 
