@@ -16,6 +16,9 @@ jobs:
           - gemfiles/rails_6.1.gemfile
           - gemfiles/rails_7.0.gemfile
         exclude:
+          # rails 7 requires ruby >= 2.7
+          - ruby: 2.6
+            gemfile: gemfiles/rails_7.0.gemfile
           # fatal error with: 1.7.0 (using Parser 3.1.0.0, rubocop-ast 1.15.1, running on ruby 3.1.0 x86_64-linux)
           - ruby: 3.1
             gemfile: gemfiles/rubocop_1.7.gemfile
