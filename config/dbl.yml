@@ -15,6 +15,7 @@ inherit_from:
   - cops/rails.yml
   - cops/rspec.yml
   - cops/style.yml
+  - cops/types.yml
 
 
 # if you want to change the cache directory, simple set `RUBOCOP_CACHE_ROOT` for your local shell.
