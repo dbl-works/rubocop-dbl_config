@@ -1,8 +1,9 @@
 require:
   - rubocop-packaging
   - rubocop-performance
-  - rubocop-rspec
   - rubocop-rails
+  - rubocop-rspec
+  - rubocop-sorbet
 
 
 inherit_from:
