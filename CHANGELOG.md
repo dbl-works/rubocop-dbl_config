@@ -5,8 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.0] - 2022-12-30
 ### Added
-- linting for the changelog (and adjust formatting)
+- ~linting for the changelog (and adjust formatting)~ gem for linting greatly out of date and incompatible with new Rubies
+- bumped & relaxed dependencies
+- support for Ruby 3.1, 3.2
+
+### Changed
+- drop support for Ruby 2.6
 
 ## [0.3.0] - 2021-01-11
 ### Changed
