@@ -9,6 +9,7 @@
 /tmp/
 /gemfiles/.bundle/
 *.gemfile.lock
+.ruby-version
 
 /rails_test
 
