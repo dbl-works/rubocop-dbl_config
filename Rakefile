@@ -20,7 +20,7 @@ task :rails_test do
     Bundler/OrderedGems
     Style/ClassAndModuleChildren
     Layout/SpaceInsidePercentLiteralDelimiters
-    Sorbet/all
+    Sorbet
   ].freeze
 
   sh "rails new #{rails_test_dir} --skip-webpack-install"
