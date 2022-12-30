@@ -1,6 +1,10 @@
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'rubocop_dbl/version'
+
 Gem::Specification.new do |spec|
   spec.name                  = 'rubocop-dbl'
-  spec.version               = '1.0.0'
+  spec.version               = RubocopDbl::VERSION
   spec.summary               = 'RuboCop configuration for our Ruby on Rails projects'
   spec.description           = 'RuboCop configuration for our Ruby on Rails projects'
   spec.author                = 'Team DBL :rocket:'
