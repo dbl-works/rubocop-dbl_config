@@ -22,6 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-rspec', '~> 2'
   spec.add_dependency 'rubocop-sorbet', '~> 0.6'
 
-  spec.add_development_dependency 'parse_a_changelog'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
