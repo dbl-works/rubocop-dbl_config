@@ -123,7 +123,7 @@ take note of the most current version of the gem, which will be printed to conso
 * publish the gem as follows
 
 ```shell
-gem push --key github --host https://YOUR_GITHUB_USER_NAME:YOUR_PAT@rubygems.pkg.github.com/dbl-works rubocop-dbl-CURRENT_GEM_VERSION.gem
+gem push --key github --host https://"$YOUR_GITHUB_USER_NAME":"$YOUR_PAT"@rubygems.pkg.github.com/dbl-works rubocop-dbl-"$CURRENT_GEM_VERSION".gem
 ```
 
 replacing `YOUR_GITHUB_USER_NAME`, `YOUR_PAT`, `CURRENT_GEM_VERSION` with the appropriate values.
