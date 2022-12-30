@@ -4,8 +4,8 @@
 # to generate gemfiles
 #
 SUPPORTED_RUBOCOP_VERSIONS = %w[
-  1.7
-  1.24
+  1.8
+  1.41
 ].freeze
 
 SUPPORTED_RAILS_VERSIONS = %w[
