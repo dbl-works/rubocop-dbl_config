@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2022-12-30
+### Changed
+- Fixed loading cops from subdirectory
+
 ## [1.0.0] - 2022-12-30
 ### Added
 - ~linting for the changelog (and adjust formatting)~ gem for linting greatly out of date and incompatible with new Rubies
