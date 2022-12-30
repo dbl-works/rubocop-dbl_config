@@ -1,9 +1,10 @@
 require:
+  - rubocop-md
   - rubocop-packaging
   - rubocop-performance
-  - rubocop-rspec
   - rubocop-rails
-  - rubocop-md
+  - rubocop-rspec
+  - rubocop-sorbet
 
 
 inherit_from:
@@ -15,12 +16,13 @@ inherit_from:
   - cops/rails.yml
   - cops/rspec.yml
   - cops/style.yml
+  - cops/types.yml
 
 
+# if you want to change the cache directory, simple set `RUBOCOP_CACHE_ROOT` for your local shell.
+# see: https://docs.rubocop.org/rubocop/usage/caching.html
 AllCops:
   UseCache: true
-  MaxFilesInCache: 5
-  CacheRootDirectory: ./tmp/**
   TargetRubyVersion: 2.7.2
   NewCops: enable
   Exclude:

@@ -1,108 +1,96 @@
-# Prefer &&/|| over and/or.
-Style/AndOr:
-  Enabled: true
+# Defaults for this cop are found here:
+# https://github.com/rubocop/rubocop/blob/master/config/default.yml
+#
+# Add customizations below.
+#
+# Ensure to document why we change a default by linking the corresponding PR.
+# For example:
+#
+#     Style/AndOr:
+#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/34'
+#       Enabled: true
+#
 
-# Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
-Style/HashSyntax:
-  Enabled: true
-
-Style/DefWithParentheses:
-  Enabled: true
-
-# Defining a method with parameters needs parentheses.
-Style/MethodDefParentheses:
-  Enabled: true
-
+# @NOTE: changed from "always" to "never"
 Style/FrozenStringLiteralComment:
+  Reference: 'we have no reference for this change'
   EnforcedStyle: never
-
-Style/RedundantFreeze:
-  Enabled: true
-
-# Check quotes usage according to lint rule below.
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: single_quotes
-
-# Use quotes for string literals when they are enough.
-Style/RedundantPercentQ:
-  Enabled: true
-
-Style/ParenthesesAroundCondition:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
 
 # enforces to use 'name'.to_sym over 'name'.intern and so on
 Style/StringMethods:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
+# @NOTE: changed from "compact" to "expanded"
 Style/EmptyMethod:
+  Reference: 'we have no reference for this change'
   EnforcedStyle: expanded
   SupportedStyles:
     - compact
     - expanded
 
-Style/SymbolArray:
-  Enabled: true
-
-Style/RedundantBegin:
-  Enabled: true
-
+# @NOTE: allowed AllowMultipleReturnValues
 Style/RedundantReturn:
+  Reference: 'we have no reference for this change'
   Enabled: true
   AllowMultipleReturnValues: true
 
-Style/RedundantRegexpEscape:
-  Enabled: true
-
+# @NOTE: allowed AllowAsExpressionSeparator
 Style/Semicolon:
+  Reference: 'we have no reference for this change'
   Enabled: true
   AllowAsExpressionSeparator: true
 
-# Prefer Foo.method over Foo::method
-Style/ColonMethodCall:
-  Enabled: true
-
 Style/CollectionMethods:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Style/Documentation:
+  Reference: 'we have no reference for this change'
   Enabled: false
 
-Style/TrivialAccessors:
-  Enabled: true
+# @NOTE: changed EnforcedStyleForMultiline from "no_comma" to "comma"
+Style/TrailingCommaInArguments:
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/27'
+  EnforcedStyleForMultiline: comma
 
+# @NOTE: changed EnforcedStyleForMultiline from "no_comma" to "comma"
+Style/TrailingCommaInArrayLiteral:
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/24'
+  EnforcedStyleForMultiline: comma
+
+# @NOTE: changed EnforcedStyleForMultiline from "no_comma" to "comma"
+Style/TrailingCommaInHashLiteral:
+  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/24'
+  EnforcedStyleForMultiline: comma
+
+#
+# @NOTE: the following cops are "pending" by default
+#
 Style/ArgumentsForwarding:
+  Reference: 'we have no reference for this change'
   Enabled: false
 
 Style/CollectionCompact:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Style/DocumentDynamicEvalDefinition:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Style/NegatedIfElseCondition:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Style/NilLambda:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Style/RedundantArgument:
+  Reference: 'we have no reference for this change'
   Enabled: true
 
 Style/SwapValues:
+  Reference: 'we have no reference for this change'
   Enabled: true
-
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: comma
-
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: comma
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: comma

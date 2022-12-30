@@ -7,6 +7,6 @@ gem 'bundler'
 gem 'minitest'
 gem 'rails', '~> 6.0'
 gem 'rake'
-gem 'rubocop', '~> 1.7.0'
+gem 'rubocop', '~> 1.8.0'
 
 gemspec path: '../'
