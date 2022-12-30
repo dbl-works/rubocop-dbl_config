@@ -16,3 +16,4 @@ Sorbet/HasSigil:
   SuggestedStrictness: strict
   Exclude:
     - spec/**/*
+    - test/**/*
