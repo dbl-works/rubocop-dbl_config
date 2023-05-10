@@ -2,6 +2,7 @@
 
 require 'rails/generators/base'
 require 'active_support/core_ext/string'
+require 'railties'
 
 module RubocopDbl
   module Generators
