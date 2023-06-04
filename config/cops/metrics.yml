@@ -12,7 +12,7 @@
 
 # @NOTE: IgnoredMethods by default only contains "refine"
 Metrics/BlockLength:
-  IgnoredMethods:
+  Exclude:
     - describe
     - context
     - feature
