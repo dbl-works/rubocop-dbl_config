@@ -7,7 +7,6 @@
 # For example:
 #
 #     Layout/EndAlignment:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/35'
 #       Enabled: true
 #
 
@@ -15,14 +14,12 @@
 # assignments, where it should be aligned with the LHS.
 # @NOTE: changed EnforcedStyleAlignWith from "keyword" to "variable"
 Layout/EndAlignment:
-  Reference: 'we have no reference for this change'
   Enabled: true
   EnforcedStyleAlignWith: variable
   AutoCorrect: true
 
 # @NOTE: changed EnforcedStyle from "with_first_parameter" to "with_fixed_indentation"
 Layout/ParameterAlignment:
-  Reference: 'we have no reference for this change'
   EnforcedStyle: with_fixed_indentation
   SupportedStyles:
     - with_first_parameter

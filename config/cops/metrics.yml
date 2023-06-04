@@ -7,13 +7,11 @@
 # For example:
 #
 #     Metrics/BlockLength:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/37'
 #       Enabled: true
 #
 
 # @NOTE: IgnoredMethods by default only contains "refine"
 Metrics/BlockLength:
-  Reference: 'we have no reference for this change'
   IgnoredMethods:
     - describe
     - context

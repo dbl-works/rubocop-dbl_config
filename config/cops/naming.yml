@@ -7,11 +7,10 @@
 # For example:
 #
 #     Naming/VariableNumber:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/38'
 #       Enabled: true
 #
 
 # @NOTE: changed EnforcedStyle from "normalcase" to "snake_case"
+# https://github.com/dbl-works/rubocop-dbl/pull/26
 Naming/VariableNumber:
-  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/26'
   EnforcedStyle: snake_case
