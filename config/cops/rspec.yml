@@ -7,14 +7,12 @@
 # For example:
 #
 #     RSpec/AlignLeftLetBrace:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/32'
 #       Enabled: true
 #
 
 
 # @NOTE: added: "if", "and"
 RSpec/ContextWording:
-  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   Prefixes:
     - when
     - with
@@ -25,18 +23,15 @@ RSpec/ContextWording:
 
 # @NOTE: by default, no methods are enabled
 RSpec/Capybara/FeatureMethods:
-  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   EnabledMethods:
     - feature
     - scenario
 
 # @NOTE: increased from 3 to 5
 RSpec/NestedGroups:
-  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   Max: 5
 
 
 # @NOTE: increased from 5 to 6
 RSpec/MultipleMemoizedHelpers:
-  Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/25'
   Max: 6

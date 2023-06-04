@@ -7,7 +7,6 @@
 # For example:
 #
 #     Rails/ActionFilter:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/33'
 #       Enabled: false
 #
 
@@ -21,12 +20,10 @@ Rails/UnknownEnv:
 
 # @NOTE: disabled
 Rails/HttpStatus:
-  Reference: 'We have no reference for this change'
   Enabled: false
 
 # @NOTE: disabled
 Rails/ApplicationController:
-  Reference: 'We have no reference for this change'
   Enabled: false
 
 
@@ -34,70 +31,53 @@ Rails/ApplicationController:
 # @NOTE: all the cops ahead are "pending" in the current default config
 #
 Rails/ActiveRecordCallbacksOrder:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/AfterCommitOverride:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/AttributeDefaultBlockValue:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/FindById:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/Inquiry:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/MailerName:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/MatchRoute:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/NegateInclude:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/Pluck:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/PluckInWhere:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/RenderInline:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/RenderPlainText:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/ShortI18n:
-  Reference: 'We have no reference for this change'
   Enabled: true
   EnforcedStyle: aggressive
 
 Rails/SquishedSQLHeredocs:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/WhereEquals:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/WhereExists:
-  Reference: 'We have no reference for this change'
   Enabled: true
 
 Rails/WhereNot:
-  Reference: 'We have no reference for this change'
   Enabled: true

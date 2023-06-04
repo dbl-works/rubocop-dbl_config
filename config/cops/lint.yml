@@ -7,7 +7,6 @@
 # For example:
 #
 #     Lint/AmbiguousOperator:
-#       Reference: 'https://github.com/dbl-works/rubocop-dbl/pull/36'
 #       Enabled: true
 #
 
@@ -15,33 +14,25 @@
 # @NOTE: the following cops are on "pending" by default
 #
 Lint/DuplicateBranch:
-  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/DuplicateRegexpCharacterClassElement:
-  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/EmptyBlock:
-  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/EmptyClass:
-  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/NoReturnInBeginEndBlocks:
-  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/ToEnumArguments:
-  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/UnexpectedBlockArity:
-  Reference: 'we have no reference for this change'
   Enabled: true
 
 Lint/UnmodifiedReduceAccumulator:
-  Reference: 'we have no reference for this change'
   Enabled: true
