@@ -17,3 +17,10 @@ Metrics/BlockLength:
     - context
     - feature
     - scenario
+
+Metrics/MethodLength:
+  Max: 30
+  CountAsOne:
+    - array
+    - heredoc
+    - method_call
