@@ -12,7 +12,7 @@ then
     exit
 fi
 
-if ! grep -q ":rubygems_*:" ~/.gem/credentials
+if ! grep -q ":rubygems_*" ~/.gem/credentials
 then
   echo "RubyGem credentials are not set. Please configure ~/.gem/credentials."
   exit
