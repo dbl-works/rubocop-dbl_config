@@ -6,7 +6,7 @@ RuboCop configuration for our Ruby on Rails projects.
 
 [Official RoR RuboCop Configuration](https://github.com/rails/rails/blob/master/.rubocop.yml).
 
-Releases are published to [GitHub's Package Service](https://github.com/dbl-works/rubocop-dbl/packages/550489).
+Releases are published to [RubyGems](https://rubygems.org/gems/rubocop-dbl).
 
 ## Installation
 
@@ -15,9 +15,6 @@ group :development, :test do
   gem 'rubocop-dbl'
 end
 ```
-
-WHY: we cannot install a public (!!) package from GitHub packages without a PAT (personal access token), see this [thread](https://github.community/t/download-from-github-package-registry-without-authentication/14407).
-E.g. CircleCI does not allow reading a ENV var within the ci.yml, hence it is impossible to configure bundle to have auth for GitHub packages (this might work using GitHub actions).
 
 ## Setup
 
