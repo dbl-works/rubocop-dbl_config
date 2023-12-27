@@ -2,6 +2,12 @@ name: Test
 on: [push]
 jobs:
   test:
+    name: ${{ matrix.ruby }} / ${{ matrix.gemfile }}
+    env:
+      BUNDLE_GEMFILE: ${{ matrix.gemfile }}
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
     strategy:
       fail-fast: false
       matrix:
@@ -23,18 +29,13 @@ jobs:
             gemfile: gemfiles/rubocop_1.8.gemfile
           - ruby: 3.3
             gemfile: gemfiles/rubocop_1.8.gemfile
-    env:
-      BUNDLE_GEMFILE: ${{ matrix.gemfile }}
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+
     steps:
       - uses: actions/checkout@v4
-
       - name: Set up Ruby ${{ matrix.ruby }}
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-
-      - name: Run Test
+      - name: Run Tests
         run: bundle exec rake
