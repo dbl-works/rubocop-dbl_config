@@ -1,13 +1,12 @@
 # typed: false
 
 require 'rails/generators/base'
-require 'active_support/core_ext/string'
 require 'railties'
 
 module RubocopDbl
   module Generators
     class InstallGenerator < Rails::Generators::Base
-      desc 'Creates a .rubocop.yml config file that inherits from the official Ruby on Rails .rubocop.yml.'
+      desc 'Creates a .rubocop.yml config file that inherits from the various rubocop gems (Rails optional).'
 
       def create_config_file
         file_method = config_file_exists? ? :prepend : :create
@@ -25,11 +24,24 @@ module RubocopDbl
       end
 
       def config_file_content
-        <<~HEREDOC
-          inherit_gem:
-            rubocop-dbl:
+        if defined?(Rails)
+          <<~HEREDOC
+            require:
+              - rubocop-rails
+
+            inherit_gem:
+              rubocop-dbl:
+                - config/dbl.yml
+                - config/cops/rails.yml
+          HEREDOC
+        else
+          <<~HEREDOC
+
+            inherit_gem:
+              rubocop-dbl:
               - config/dbl.yml
-        HEREDOC
+          HEREDOC
+        end
       end
     end
   end
