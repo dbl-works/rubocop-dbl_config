@@ -10,7 +10,6 @@ end
 
 RuboCop::RakeTask.new
 
-# rubocop:disable Rails/RakeEnvironment
 task :rails_test do
   rails_test_dir = 'rails_test'
   except_cops = %w[
@@ -35,6 +34,5 @@ task :rails_test do
   end
   rm_rf rails_test_dir
 end
-# rubocop:enable Rails/RakeEnvironment
 
 task default: %i[test rubocop rails_test]

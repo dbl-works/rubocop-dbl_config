@@ -1,7 +1,6 @@
 require:
   - rubocop-packaging
   - rubocop-performance
-  - rubocop-rails
   - rubocop-rspec
   - rubocop-sorbet
 
@@ -12,7 +11,6 @@ inherit_from:
   - cops/metrics.yml
   - cops/naming.yml
   - cops/performance.yml
-  - cops/rails.yml
   - cops/rspec.yml
   - cops/style.yml
   - cops/types.yml
@@ -22,7 +20,7 @@ inherit_from:
 # see: https://docs.rubocop.org/rubocop/usage/caching.html
 AllCops:
   UseCache: true
-  TargetRubyVersion: 2.7.2
+  TargetRubyVersion: 3.1.4
   NewCops: enable
   Exclude:
     - '**/tmp/**/*'

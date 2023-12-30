@@ -26,6 +26,20 @@ rails generate rubocop_dbl:install
 
 or manually Aad this line to your application's `.rubocop.yml`:
 
+When using Rails:
+
+```yml
+require:
+  - rubocop-rails
+
+inherit_gem:
+  rubocop-dbl:
+    - config/dbl.yml
+    - config/cops/rails.yml
+```
+
+When not using Rails:
+
 ```yml
 inherit_gem:
   rubocop-dbl:
