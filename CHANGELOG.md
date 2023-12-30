@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Rails Cops are only enabled, if `Rails` is a defined constant
+- **breaking change** The `rubocop.yml` file must add `config/cops/rails.yml` manually, if Rails is used (or re-run the generator). This is because we can't have dynamic code in YML files.
+
 ## [1.0.1] - 2022-12-30
 ### Changed
 - Fixed loading cops from subdirectory
