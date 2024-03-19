@@ -27,5 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-rspec', '~> 2'
   spec.add_dependency 'rubocop-sorbet', '~> 0.6'
 
+  spec.add_dependency 'rubocop-rails', '~> 2' if defined?(Rails)
+
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
