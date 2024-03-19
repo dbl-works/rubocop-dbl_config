@@ -11,7 +11,7 @@
 #
 
 Sorbet/HasSigil:
-  MinimumStrictness: true
+  MinimumStrictness: strict
   SuggestedStrictness: strict
   Exclude:
     - spec/**/*
