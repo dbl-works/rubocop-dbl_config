@@ -1,1 +1,4 @@
 inherit_from: ./config/dbl.yml
+
+Sorbet/StrictSigil:
+  Enabled: false

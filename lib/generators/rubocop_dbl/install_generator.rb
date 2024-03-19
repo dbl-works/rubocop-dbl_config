@@ -11,20 +11,23 @@ module RubocopDbl
       def create_config_file
         file_method = config_file_exists? ? :prepend : :create
         content = defined?(Rails) ? config_file_content_rails : config_file_content
-        send :"#{file_method}_file", config_file_path, config_file_content
+
+        send(
+          :"#{file_method}_file",
+          config_file_path,
+          content,
+        )
       end
 
-      private
-
-      def config_file_exists?
+      private def config_file_exists?
         File.exist?(config_file_path)
       end
 
-      def config_file_path
+      private def config_file_path
         '.rubocop.yml'
       end
 
-      def config_file_content
+      private def config_file_content
         <<~HEREDOC
             inherit_gem:
               rubocop-dbl:
@@ -42,7 +45,7 @@ module RubocopDbl
         HEREDOC
       end
 
-      def config_file_content_rails
+      private def config_file_content_rails
         <<~HEREDOC
           require:
             - rubocop-rails
