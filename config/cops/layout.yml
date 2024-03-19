@@ -24,3 +24,10 @@ Layout/ParameterAlignment:
   SupportedStyles:
     - with_first_parameter
     - with_fixed_indentation
+
+Layout/LineLength:
+  Max: 120
+  IgnoreCopDirectives: true
+  AllowedPatterns: ['\s#\s'] # allows comments to overflow the line length. E.g. for URLs
+  Exclude:
+    - 'spec/**/*'

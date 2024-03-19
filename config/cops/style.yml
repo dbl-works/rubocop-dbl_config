@@ -76,3 +76,7 @@ Style/RedundantArgument:
 
 Style/SwapValues:
   Enabled: true
+
+# "private_class_method" must always be inlined, no need for a cop
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline

@@ -3,10 +3,9 @@ on: [push]
 jobs:
   test:
     name: ${{ matrix.ruby }} / ${{ matrix.gemfile }}
+    runs-on: ubuntu-latest
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
 
     strategy:
       fail-fast: false
@@ -22,7 +21,6 @@ jobs:
           - gemfiles/rails_6.1.gemfile
           - gemfiles/rails_7.0.gemfile
         exclude:
-          # fatal error with: 1.8.0 (using Parser 3.1.0.0, rubocop-ast 1.15.1, running on ruby 3.1.0 x86_64-linux)
           - ruby: 3.1
             gemfile: gemfiles/rubocop_1.8.gemfile
           - ruby: 3.2
