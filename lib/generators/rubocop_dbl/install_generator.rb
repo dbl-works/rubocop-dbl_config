@@ -25,19 +25,7 @@ module RubocopDbl
       end
 
       def config_file_content
-        if defined?(Rails)
-          <<~HEREDOC
-            require:
-              - rubocop-rails
-
-            inherit_gem:
-              rubocop-dbl:
-                - config/dbl.yml
-                - config/cops/rails.yml
-          HEREDOC
-        else
-          <<~HEREDOC
-
+        <<~HEREDOC
             inherit_gem:
               rubocop-dbl:
               - config/dbl.yml
@@ -54,7 +42,7 @@ module RubocopDbl
         HEREDOC
       end
 
-      def config_file_content
+      def config_file_content_rails
         <<~HEREDOC
           require:
             - rubocop-rails
